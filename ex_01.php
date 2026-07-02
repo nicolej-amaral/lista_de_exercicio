@@ -2,7 +2,7 @@
 
 //(x² + y²) / (x+y)
 
-function calcular($x,$y)
+function calcularFormula($x,$y)
 {
 
     if(($x+$y)== 0){
@@ -21,5 +21,5 @@ function calcular($x,$y)
     echo "Valor de x é:  $x <br>";
     echo "Valor de y é:  $y <br>";
 
-    echo "Resultado: " . calcularFormula($x,$y);
+    echo "<br> Resultado: " . calcularFormula($x,$y);
 ?>
