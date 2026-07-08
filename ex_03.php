@@ -1,19 +1,12 @@
 <?php
 
-function cpf($cpfNormal)
+function  mascararCpf()
 {
-
-
-   $cpf = mascararCpf($cpfNormal);
-    return $cpf;
-
+    $cpf = "720.957.137-59";
+    $mascararCpf = substr($cpf, 0, 0) . "***.***.*" . substr($cpf, -5);
+    return $mascararCpf;
 }
 
-    $cpfNormal = "12312312323";
+echo "CPF original: 720.957.137-59 <br>";
 
-    echo "CPF normal:  $cpfNormal <br>";
-    echo "CPF mascarado: " . mascararCpf($cpfNormal) . "<br>";
-
-     
-    
-    ?>
+echo "CPF mascarado: " . mascararCpf();
