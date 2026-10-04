@@ -1,5 +1,5 @@
 <?php
-function  analiseTexto($texto)
+function  analisarTexto($texto)
 {
    
     $palavras = str_word_count($texto);
@@ -14,4 +14,4 @@ function  analiseTexto($texto)
 
     $texto = "Tudo lhe é permitido, mas nem tudo lhe convém";
     echo "Texto: " . $texto . "<br>";
-    echo analiseTexto($texto);    
+    echo analisarTexto($texto);    
